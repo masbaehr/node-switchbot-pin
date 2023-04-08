@@ -10,8 +10,11 @@ document.querySelectorAll("button").forEach(btn => {
 });
 async function typeNum(n) {
     if (n === '↵') {
-        await fetch("/presscode=" + document.getElementById("curcode").value);
+        let code = document.getElementById("curcode").value;
         document.getElementById("curcode").value = "";
+        if(code !== ""){
+            await fetch("/presscode=" + code);   
+        }
     }
     if (n === 'C') {
         document.getElementById("curcode").value = "";

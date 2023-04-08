@@ -8,6 +8,10 @@ body {
     align-items: center;
     font-family: Arial;
     margin: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    touch-action: manipulation;
 }
 
 .bodyDarkMode {
@@ -45,6 +49,9 @@ input {
     text-align: center;
     margin-top: 10px;
     color: black;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .footer {
