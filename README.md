@@ -18,6 +18,9 @@ A leightweight Node.js Progressive-Web-Application (PWA) for the Raspberry Pi to
 
 - Do any action secured by a simple PIN. I use it to open a door from my own local network with the house intercom
 
+## Configuration
+
+- You can change the BLE-MAC of the SwitchBot, the Port, Hostname, your PIN, and the Command to send within the node-switchbot-pin.js File
 
 ## Recommended
 
