@@ -6,35 +6,18 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="manifest.json?v=1" />
+  <link rel="stylesheet" href="styles.css?v=1">
   <title>SwitchBot Server</title>
-  <style>
-    body {
-      max-width: 300px;
-      font-family: Arial;
-      margin: 0;
-    }
-
-    button {
-      width: 30%;
-      margin: 10px;
-      font-size: 40px;
-      background-color: #ecf6ff
-    }
-
-    .mainDiv {
-      text-align: center;
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  </style>
 </head>
 
 <body>
+  <div class='header'>
+    <a onclick="setDarkMode()" target="_blank">Darkmode</a>
+    <span>-</span>
+    <a onclick="setLightMode()" target="_blank">Lightmode</a>
+  </div>
   <div class='mainDiv'>
-    <h1>Door Opener</h1>
+    <h1 id='app-title' onclick="setTitle();">Node-Switchbot-PIN</h1>
     <div style='display: flex; justify-content: center;'>
       <button onclick='typeNum(1);'>1</button>
       <button onclick='typeNum(2);'>2</button>
@@ -56,10 +39,11 @@
       <button onclick="typeNum('↵');">↵</button>
     </div>
     <div>
-      <input id="curcode" disabled="true" type="text" style='font-size: 40px; width: 50%; text-align: center;'></input>
+      <input id="curcode" disabled="true" type="text"></input>
     </div>
-
+     
   </div>
+  <div class='footer'><span>©</span><a href='https://github.com/masbaehr/node-switchbot-pin' target="_blank">masbaehr - find me on github</div>
   <script src="main.js?v=1"></script>
   <script src="sw.js?v=1"></script>
 </body>

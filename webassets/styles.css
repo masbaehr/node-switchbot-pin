@@ -1,0 +1,91 @@
+body {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    margin: 0;
+}
+
+.bodyDarkMode {
+    background: black;
+    color: white;
+}
+
+button {
+    width: 30%;
+    margin: 10px;
+    font-size: 40px;
+    background-color: #ecf6ff;
+    border: 3px solid #00a3ff;
+    color: black;
+}
+
+.mainDiv {
+    max-width: 350px;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #6e6d6d;
+}
+
+input {
+    background: #ecf6ff;
+    border: 3px solid #00a3ff;
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    border-top: 1px solid #d4d4d4;
+    color: #6e6d6d;
+    line-height: 15px;
+}
+
+.header a {
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.footer a {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.footer a,
+.footer span {
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    color: #6e6d6d;
+    line-height: 15px;
+}
+
+.headerFooterDarkMode,
+.headerFooterDarkMode a {
+    background: black;
+    color: white;
+}

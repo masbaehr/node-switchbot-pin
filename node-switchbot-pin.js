@@ -21,6 +21,7 @@ function createResponse(url, response) {
 
   let fileMappings = {
     ".js": {m: "application/javascript", e: 'utf8'},
+    ".css": {m: "text/css", e: 'utf8'},
     ".png": {m: "image/png", e: null},
     ".ico": {m: "image/x-icon", e: null},
     ".json": {m: "application/json", e: 'utf8'},
